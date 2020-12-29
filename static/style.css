@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Raleway:wght@400&display=swap');
+
+body{
+    background-image: linear-gradient(to left bottom, #264763, #3f5872, #566a81, #6c7c91, #838fa1, #959eae, #a7adbb, #b9bdc8, #cbcdd5, #dddde3, #eeeef1, #ffffff);
+    background-size: 200% 200%;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.main_frame{
+    height: 80vh;
+    width: 70vw;
+    border-radius: 20px;
+    background-color: rgb(236 237 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+}
+
+.city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city::selection{
+    background-color: transparent;
+}
+
+h1::selection, h2::selection,  .explain::selection{
+    background:rgba(255, 226, 253, 0.788);
+}
+
+h1, h2{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: 800;
+    color: #2d4b67;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 6vh;
+    color: #a19d83;
+}
+
+h2 span{
+    font-size: 3vh;
+}
+
+
+.explain{
+
+    width: 60%;
+    font-style: italic;
+    color: #909aab;
+}
+.weather_data{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: -10vh;
+}
+
+.weather_data_entry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    text-align: center;
+    cursor: pointer;
+    border-left: 1px solid #a29e8447;
+}
+
+.weather_data_entry:first-of-type{
+    border-left: none !important;
+}
+.wde_header{
+    padding: 2vh 0;
+}
+
+i{
+    font-size: 3vh;
+    color:#a3aab8;
+}
+
+.weather_data_entry:hover i{
+    color: #2d4b67;
+}
+
+
+
+
+
+  

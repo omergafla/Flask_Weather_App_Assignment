@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Assignment - Weather App</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+</head>
+<body>
+    <div class="main_frame">
+        <div class="city">
+            <div>
+                <h1>{{coldest_city["city"]}}</h1>
+                <h2>{{coldest_city["temp"]}}&#176;</h2>
+            </div>
+            <div class="explain">
+                is currently the coldest city among Tel-Aviv, Berlin and Budapest, according to a 5 days forecast by https://openweathermap.org/api. Current Berlin lowest temp data:
+            </div>
+        </div>
+        <div class="weather_data">
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="wde_header">
+                    Feels Like
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["feels_like"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-thermometer-quarter"></i>
+                </div>
+                <div class="wde_header">
+                    Min Temp
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["temp_min"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-thermometer-three-quarters"></i>
+                </div>
+                <div class="wde_header">
+                    Max Temp
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["temp_max"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                </div>
+                <div class="wde_header">
+                    Pressure
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["pressure"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="wde_header">
+                    Sea Level
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["sea_level"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-grip-lines"></i>
+                </div>
+                <div class="wde_header">
+                    Ground Level
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["grnd_level"]}}
+                </div>
+            </div>
+
+            <div class="weather_data_entry">
+                <div class="wde_icon">
+                    <i class="fas fa-hand-holding-water" ></i>
+                </div>
+                <div class="wde_header">
+                    Humidity
+                </div>
+                <div class="wde_content">
+                    {{coldest_city["humidity"]}}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
