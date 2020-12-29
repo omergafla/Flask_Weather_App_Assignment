@@ -13,3 +13,6 @@ The app, built with Flask (Python), uses the OpenWeather Api to get a 5 days for
   
   
   In order to run the app: `flask run` on local server, and then nevigate to  http://localhost:5000/
+
+
+I also used FONTAWESOME just for fun :)
