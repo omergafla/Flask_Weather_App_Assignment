@@ -1,4 +1,4 @@
-#Flask_Weather_App_Assignment
+# Flask_Weather_App_Assignment
 
 This weather web-app displays the weather of the coldest city among Tel-Aviv, Berlin, and Budapest. The app, built with Flask (Python), uses the OpenWeather API to get a 5-day forecast for these cities.
 
